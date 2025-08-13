@@ -1,0 +1,8 @@
+torch
+transformers
+pillow
+numpy
+scikit-learn
+matplotlib
+kaggle
+faiss-cpu
