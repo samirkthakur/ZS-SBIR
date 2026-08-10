@@ -10,10 +10,19 @@ The architecture is designed to bridge the massive domain gap between abstract, 
 *   **Metric Learning:** The projection network is trained using InfoNCE loss, which is a contrastive loss function designed to pull sketch embeddings closer to their corresponding photo embeddings while pushing them away from dissimilar photos.
 *   **Retrieval Engine:** For efficient real-world evaluation, gallery image embeddings are precomputed, and FAISS (Facebook AI Similarity Search) is utilized to rapidly find the nearest neighbor images for any given query.
 
+<p align="center">
+  <figure>
+    <img src="assets/architecture.png" alt="ZS-SBIR Framework Architecture" width="700">
+    <figcaption align="center"><b>Figure 1:</b> Overview of the Zero-Shot Sketch-Based Image Retrieval Pipeline</figcaption>
+  </figure>
+</p>
+
 ## Repository Structure
 The project is organized into the following modular directory structure:
 
 ```text
+├── assets/
+│   └── architecture.png        # Pipeline architecture diagram
 ├── model/                      # Core machine learning models and scripts
 │   ├── main.py                 # Main execution script
 │   ├── requirements.txt        # Python dependencies
